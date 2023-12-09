@@ -20,7 +20,7 @@ import com.college.serviceInterface.StudentInterface;
 import com.college.util.StudentUtil;
 
 @RestController
-@RequestMapping("/student")
+@RequestMapping("/students")
 public class StudentController {
 
 	@Autowired
@@ -68,10 +68,10 @@ public class StudentController {
 	}
 	
 	
-	@GetMapping("/getMiddleName/{name}")
+	/*@GetMapping("/getMiddleName/{name}")
 	public ResponseEntity<StudentUtil> findByMiddleName(@PathVariable("name") String name){
 		return new ResponseEntity<>(studentInterface.findByMiddleName(name), HttpStatus.OK);
 
 	}
-	
+	*/
 }
