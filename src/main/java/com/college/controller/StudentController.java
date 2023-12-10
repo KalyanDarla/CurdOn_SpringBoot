@@ -73,5 +73,9 @@ public class StudentController {
 		return new ResponseEntity<>(studentInterface.findByMiddleName(name), HttpStatus.OK);
 
 	}
-	
+	@GetMapping("/getMiddleName/{name}")
+	public ResponseEntity<StudentUtil> findByMiddleName(@PathVariable("name") String name){
+		return new ResponseEntity<>(studentInterface.findByMiddleName(name), HttpStatus.OK);
+
+	}
 }
